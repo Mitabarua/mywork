@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<tittle>Document</tittle>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		div{
+			width:100px;
+	height:100px;
+	background: red;
+	position:relative;
+	animation: mymove 5s infinite;
+}
+@keyframes mymove{
+	from{left:0px;}
+	to {left: 200px;}
+}
+		}
+		{
+	box-sizing:border-box}
+	/*style the header*/
+	header{
+		background-color:Black;
+		text-align:Center;
+		Font-size:35px;
+		color:White;
+	} 
+	/*Create two coloums/boxes that floats next to each other*/
+	nav{
+		float:left;
+		width:30%;
+		height:300px;
+		background:Red;
+	}
+	article{
+		float:left;
+		width:70%;
+		height:300px;
+		background-color:orange;
+	}
+	section:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	footer{
+		background-color:black;
+		text-align:center;
+		color:white;
+	}
+	input[type=checkbox] {
+		accent-color:red;
+	}
+	input[type=radio] {
+		accent-color:green;
+	}
+	input[type=range]{
+		accent-color:rgb(0,0,255);
+	}
+	progress{
+		accent-color:hsl(39,100%,50%);
+	}
+</style>
+</head>
+<body>
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<header>
+<h2>Cities</h2>
+</header>
+<section>
+<nav>
+<ul>
+<li><a href="#">London</a></li>
+<li><a href="#">Paris</a></li>
+<li><a href="#">Tokyo</a></li>
+</ul>
+</nav>
+<article>
+<h1>London</h1>
+<p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p><br><h2>Paris</h2>
+<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</article>
+</section>
+<footer>
+<p>Footer</p>
+</Footer>
+<h1>The accent-color property</h1>
+<h3>Accent color for checkbox:</h3>
+<input type="checkbox"id="vehicle1"name="vehicle1"value="Bike" checked>
+<lable for="vehicle1">I have a bike</lable><br>
+<input type="checkbox"id="vehicle2"name="vehicle2"value="Car" checked>
+<label for="vehicle2">I have a car</label><br><br>
+<h3>Accent color for radiobuttons:</h3>
+<input type="radio"id="html"name="fav_language"value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio"id="css"name="fav_language" value="CSS" checked>
+<label for="css">CSS</label><br>
+<h3>Accent color for a range field:</h3>
+<label for="vol">Volume:</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+<h3>Accent color for a progress element:</h3>
+<label for ="file">Downloading Pregress:</label>
+<progress id="file" value="72" max="100">72% </progress>
+
+ <h1>The align-content Property</h1>
+  <div id="main">
+  	<div style="background-color:red"></div>
+  	<div style="background-color:green"></div>
+  	<div style="background-color:blue"></div>
+  </div>
+  <p><b>Note:</b>  Internet Explorer 10 and earlier versions do not support the align-content property</p>
+
+  <h2>Align-items:center</h2>
+  <div id="main">
+  	<div style="color:red"min-height:30px;>RED</div>
+    <div style="color:green"min-height:50px>GREEN</div>
+    <div style="color:blue"min-height:190px>BLUE</div>
+    </div>
+
+
+
+
+  <div class="header"></div>
+<div class="container">
+	<div class="blog"></div>
+	<div class="contact"></div>
+</div>
+
+<div class="container">
+	<div class="item yellow"></div>
+	<div class="item tomato"></div>
+	<div class="item limegreen"></div>
+   </div>
+<div class="wrapper">
+	<div class="name sarmin"></div>
+	<div class="name sumi"></div>
+	<div class="name rumi"></div>
+	<div class="name tuni"></div>
+</div>
+  <div class="footer"></div>
+<h1> The animation Property</h1>  
+<p>Move an element from 0px to 200px left. The animation lasts for 5 seconds. It then starts over again, and go on forever(infinite)</p>
+<div></div>
+</body>
+</html>
